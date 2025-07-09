@@ -28,7 +28,7 @@ nvim
 ```
 
 ## Plugins
-
+```bash
 ● autoclose.nvim 1.7ms  start
 ● cmp-nvim-lsp 0.13ms  start
 ● cmp_luasnip 0.36ms  LuaSnip
@@ -51,3 +51,4 @@ nvim
 ● telescope.nvim 3.49ms 󰢱 telescope  telescope-ui-select.nvim
 ● tokyonight.nvim 7.41ms  start
 ● undotree 3.27ms  start
+```bash
