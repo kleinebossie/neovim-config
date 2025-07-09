@@ -51,4 +51,4 @@ nvim
 ● telescope.nvim 3.49ms 󰢱 telescope  telescope-ui-select.nvim
 ● tokyonight.nvim 7.41ms  start
 ● undotree 3.27ms  start
-```bash
+```
