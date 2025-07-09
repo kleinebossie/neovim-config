@@ -5,7 +5,7 @@ I've used Neovim for a week now as a relatively new programmer, so if I can do t
 
 ---
 ## Structure
-
+```bash
 ~/.config/nvim/
 ├── init.lua                 # Main entry point for Neovim config
 ├── LICENSE                  # Project license (MIT)
@@ -18,7 +18,7 @@ I've used Neovim for a week now as a relatively new programmer, so if I can do t
         ├── plugin1.lua      # Configuration for plugin1
         ├── plugin2.lua      # Configuration for plugin2
         └── ...              # Additional plugin configs
-
+```
 ## Installation
 ```bash
 cd ~/.config
