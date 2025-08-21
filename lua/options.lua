@@ -23,8 +23,12 @@ vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
 vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
 vim.keymap.set("n", "<leader>ch", function()
-	vim.cmd('!open -a "Google Chrome" ' .. vim.fn.expand("%:p"))
+	vim.cmd('!open -a "Google Chrome" --args --incognito ' .. vim.fn.expand("%:p"))
 end, { desc = "Open current file in Chrome" })
+
+vim.keymap.set("n", "<leader>sl", function()
+	vim.cmd("!cp ~/Desktop/.stylelintrc.json .")
+end, { desc = "Copy .stylelint.json to current directory" })
 
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })

@@ -33,5 +33,8 @@ return {
 		vim.keymap.set("n", "<leader>9", function()
 			ui.nav_file(9)
 		end)
+		vim.keymap.set("n", "<leader>0", function()
+			ui.nav_file(9)
+		end)
 	end,
 }
