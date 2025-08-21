@@ -23,11 +23,11 @@ vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
 vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
 vim.keymap.set("n", "<leader>ch", function()
-	vim.cmd('!open -a "Google Chrome" --args --incognito ' .. vim.fn.expand("%:p"))
+  vim.cmd('!open -a "Google Chrome" --args --incognito ' .. vim.fn.expand("%:p"))
 end, { desc = "Open current file in Chrome" })
 
 vim.keymap.set("n", "<leader>sl", function()
-	vim.cmd("!cp ~/Desktop/.stylelintrc.json .")
+  vim.cmd("!cp ~/Desktop/.stylelintrc.json .")
 end, { desc = "Copy .stylelint.json to current directory" })
 
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
@@ -57,12 +57,10 @@ vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
 
-vim.opt.colorcolumn = "80"
-
-vim.wo.relativenumber = true
+vim.opt.relativenumber, vim.opt.number = true, true
 
 vim.diagnostic.config({
-	virtual_text = true,
-	signs = true,
-	underline = true,
+  virtual_text = true,
+  signs = true,
+  underline = true,
 })
