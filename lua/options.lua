@@ -27,8 +27,16 @@ vim.keymap.set("n", "<leader>ch", function()
 end, { desc = "Open current file in Chrome" })
 
 vim.keymap.set("n", "<leader>sl", function()
-  vim.cmd("!cp ~/Desktop/.stylelintrc.json .")
+  vim.cmd("!cp ~/.stylelintrc.json .")
 end, { desc = "Copy .stylelint.json to current directory" })
+
+vim.keymap.set("n", "<leader>js", function()
+  vim.cmd("!cp ~/jsconfig.json .")
+end, { desc = "Copy jsconfig.json to current directory" })
+
+vim.keymap.set("n", "<leader>ts", function()
+  vim.cmd("!cp ~/tsconfig.json .")
+end, { desc = "Copy tsconfig.json to current directory" })
 
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
